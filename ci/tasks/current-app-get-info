@@ -1,6 +1,5 @@
 #!/bin/bash
-
-set -xe
+set -e -u -x
 
 pwd
 env
