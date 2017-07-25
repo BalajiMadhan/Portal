@@ -11,4 +11,4 @@ inputs:
 - name: concourse-pipeline
 
 run:
-  path: concourse-pipeline/ci/tasks/run-unit-tests.yml
+  path: concourse-pipeline/ci/tasks/run-unit-tests
