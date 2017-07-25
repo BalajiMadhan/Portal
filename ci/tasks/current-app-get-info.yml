@@ -18,7 +18,7 @@ run:
   args: set -xe
   - pwd
   - env
-cf api $PWS_API --skip-ssl-validation
+  - cf api $PWS_API --skip-ssl-validation
 cf login -u $PWS_USER -p $PWS_PWD -o "$PWS_ORG" -s "$PWS_SPACE"
 cf apps
 set +e
