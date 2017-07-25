@@ -15,5 +15,5 @@ inputs:
 
 run:
   path: mvn
-  args: ["-f", "git-repo/pom.xml", "-DskipTests=true", "package"]
+  args: ["-f", "concourse-pipeline/pom.xml", "-DskipTests=true", "package"]
 
