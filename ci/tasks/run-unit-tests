@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -xe
+
+cd concourse-pipeline/
+wget -O /tmp/jdk-8u5-linux-x64.tar.gz https://s3-us-west-2.amazonaws.com/rajdeeppoc/jdk-8u5-linux-x64.tar.gz
+tar -xzf /tmp/jdk-8u5-linux-x64.tar.gz -C /opt/
+update-alternatives --install /usr/bin/java java /opt/jdk1.8.0_05/bin/java 100
+update-alternatives --install /usr/bin/javac javac /opt/jdk1.8.0_05/bin/javac 100
+export JAVA_HOME=/opt/jdk1.8.0_05/
+wget --no-verbose -O /tmp/apache-maven-3.2.2.tar.gz http://archive.apache.org/dist/maven/maven-3/3.2.2/binaries/apache-maven-3.2.2-bin.tar.gz
+tar xzf /tmp/apache-maven-3.2.2.tar.gz -C /opt/
+/opt/apache-maven-3.2.2/bin/mvn --version
+/opt/apache-maven-3.2.2/bin/mvn clean package -Dmaven.test.skip=true
+ls
