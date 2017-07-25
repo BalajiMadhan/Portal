@@ -1,0 +1,97 @@
+.container{
+	
+	    margin-top: 18%;
+    margin-left: 41%;
+
+}
+#NameDisplay {
+    color: aliceblue;
+}
+.container-fluid {
+    padding-right: 9px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+#logout {
+	background-color:#78808d;
+float: right;
+    margin-right: 10%;
+        border-color: #78808d;
+}
+
+
+
+.btn-primary {
+	
+    color: #fff;
+    background-color: #78808d;
+    border-color: #4d535f;
+	width: 20%;
+	margin-right:10%;
+}
+.btn-primary:hover{
+	
+    color: #fff;
+    background-color: #b3b7c0;
+    border-color: #4d535f;
+	width: 20%
+}
+
+body{
+	
+	background-image: url("image1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  
+}
+.footer{
+	    margin-top: 4%;
+	    margin-left: 29%;
+
+}
+
+div#main-content {
+    height: 380px;
+        margin-right: 19%;
+            margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+#content{
+	
+	margin: 0 0 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+table#filterListTable {
+    background-color: lightgrey;
+    margin-left: 0%;
+        width: 100%;
+}
+th {
+    text-align: -webkit-center;
+    padding: 1%;
+    color: black;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+td {
+    text-align: -webkit-center;
+    padding: 1%;
+    color: black;
+    font-family: sans-serif;
+}
+
+
+.input-group {
+    width: 70%;
+    margin-bottom: 2%;
+}
+.modal-content {
+    width: 85%;
+}

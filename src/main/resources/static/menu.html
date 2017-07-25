@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+<title>Login</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/Login.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="userNameDisplay()">
+
+<p>
+ <a href="index.html" class="btn btn-info btn-lg" id="logout">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+</p>
+       
+
+<div class="container-fluid" >
+
+<div class="NameDisplay">
+<p id="NameDisplay">
+
+ 
+</p>
+
+</div>
+
+   <div class="form-group"> 
+<input type="submit" value="Profile" onclick="profileData()" class="btn btn-primary"/>
+  
+  
+<input type="submit" value="Training" onclick="Training()" class="btn btn-primary" />
+
+ 
+<input type="submit" value="Certification" onclick="certification()" class="btn btn-primary" />
+</div>
+
+
+			
+			<div id="main-content">
+			
+			<p id="content"></p>
+			<table id="filterListTable" ></table>
+			
+			</div>
+			
+</div>
+			
+<div class="footer" style=" margin-top: 0%;">
+<img src="image2.svg" ></img>
+</div>
+	  
+<div class="container">
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Certification Details</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+          	<div class="input-group">
+    <label>Certification Name
+    <input  type="text" class="form-control" id="cName" name="cName" placeholder="Certification Name"></label>
+  </div>
+     	<div class="input-group">
+    <label>Certification Date
+    <input  type="Date" style="width: 112%;" class="form-control" id="cStart" name="cStart" placeholder="Certified Date"></label>
+  </div>
+     	<div class="input-group">
+    <label>Certification ExpiryDate
+    <input  type="Date" class="form-control" id="cEnd" name="cEnd" placeholder="Expiry Date"></label>
+  </div>
+          	
+          	
+			
+			
+		<input type="button" name="submit" class="btn btn-primary" id="submit" data-dismiss="modal" value="Submit" onclick="UpdateCertification()">
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
