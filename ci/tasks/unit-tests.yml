@@ -1,14 +1,19 @@
----
 platform: linux
 
 image_resource:
   type: docker-image
   source:
-    repository: java
-    tag: "8"
+    repository: nitram509/alpine-oraclejdk8-maven-cmake-gcc
+    tag: latest
 
 inputs:
-- name: concourse-pipeline
+  - name: git-repo
+
+#outputs:
+#  - name: jar-file
+#    path: git-repo/target/
 
 run:
-  path: concourse-pipeline/ci/tasks/run-unit-tests
+  path: mvn
+  args: ["-f", "git-repo/pom.xml", "-DskipTests=true", "package"]
+
